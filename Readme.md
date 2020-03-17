@@ -89,7 +89,8 @@ By Romy Bompart
 	4.6 Configure SublimeREPL, go to preferences > Browse Packages... , a explorer windows will show you the folder where 
 	SublimeREPL is installed, but we need to go to SublimeREPL > config , and open the Python\Main.sublime-menu in sublime text 3 editor. 
 		4.6.1 Add the following code and the end of the dictionary: 
-					,
+		
+		,
                     {"command": "repl_open",
                      "caption": "Python MyEnv",
                      "id": "MyEnv env",
@@ -104,6 +105,7 @@ By Romy Bompart
                         "extend_env": {"PYTHONIOENCODING": "utf-8"}
                         }
                     }
+		    
         4.6.2 Save it, and we are almost done. 
 
     4.7 Configure the build system. Actually, it is select the generated Anaconda Python Builder. 
