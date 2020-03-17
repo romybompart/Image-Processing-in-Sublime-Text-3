@@ -9,7 +9,7 @@ By Romy Bompart
 2. Once it is install you need to install Anaconda
  2.1 Follow the documentation: https://docs.anaconda.com/anaconda/install/windows/
 
-3. Anaconda already installed a version of python, but you can have different version if you want. Then next step is to install virtualenv in order to control the version of python and libraries/packages version we might be needing during a project development. 
+3. Anaconda already installs a version of python, but you can have different version if you want. Then next step is to install virtualenv in order to control the version of python and libraries/packages version we might be needing during a project development. 
  3.1 to create a virtualenv just: 
  		conda create --name myenv python=3.5
  	in my case myenv is tesorflow, and python 3.5, but again you can use whatever version of python you need. 
