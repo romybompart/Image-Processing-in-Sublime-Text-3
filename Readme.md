@@ -1,6 +1,7 @@
 To configure Sublime Text 3 as a Python IDLE
 By Romy Bompart
 
+###Usage
 
 1. First install Sublime Text 3
  1.1. Download the installator from : https://www.sublimetext.com/3
@@ -16,15 +17,19 @@ By Romy Bompart
  		conda activate myenv
  3.3 Let's install packages to this virtualenv.
  	3.3.1 activate the virtualenv
+	```bash
  		C:\Users\($yourpcname)>activate myenv
  		(myenv) C:\Users\($yourpcname)\pip install numpy
+	```
  	3.3.2 the previous installation is an example to check if the virtualenv is working properly. now let's open python and import the just installed package: 
+	```bash
  		(myenv) C:\Users\($yourpcname)>python
 		Python 3.5.6 |Anaconda, Inc.| (default, Aug 26 2018, 16:05:27) [MSC v.1900 64 bit (AMD64)] on win32
 		Type "help", "copyright", "credits" or "license" for more information.
 		>>> import numpy
 		>>> print (numpy.__version__)
 		1.15.4
+	```
 	3.3.3 Now it is working very well. Nice let's go to the next step. 
 
 4. So, we got sublime Text 3 in the step 1, we got anaconda and python in step 2, and we created a virtualenv in step 3. 
@@ -34,7 +39,7 @@ By Romy Bompart
        For example I created myproject folder, and the project name is my_env_project. 
        In the folder you shall have two files: .sublime-project and .sublime-workspace extension files. 
    	4.2 We are going to go to Project > Edit Project and configure the virtualenv path of the python interpreter:
-	
+	```
 		   {
 			"build_systems":
 			[
@@ -57,6 +62,8 @@ By Romy Bompart
 				"python_interpreter": "C:/Users/yourpcname/Anaconda3/envs/myenv/python.exe"
 			}
 		}
+	 ```
+	 
 		//taken from : http://damnwidget.github.io/anaconda/anaconda_settings/
 	4.3 The previous step helps to customize the python version of the virtualenv myenv, if you need to use another virtualenv
 	I recomend you to create a new project and change the paths to your virtualenv paths. 
@@ -72,7 +79,7 @@ By Romy Bompart
 	    and change it by "command": "sublime_jedi_params_autocomplete", "keys": ["ctrl+("],
 	    it is because you won't be able to use the open parenthesis (, I am not sure why it is originally in that way. 
 	    4.5.2 In the package settings > Jedi > Settings User:
-	    
+	    ```
 	    	{
 				"settings":
 				{
@@ -84,12 +91,13 @@ By Romy Bompart
 					]
 				}
 			}
+		```
 		4.5.3 This is because we want Jedi to autocomplete the function name (members from a class), constant variables, etc. 
 
 	4.6 Configure SublimeREPL, go to preferences > Browse Packages... , a explorer windows will show you the folder where 
 	SublimeREPL is installed, but we need to go to SublimeREPL > config , and open the Python\Main.sublime-menu in sublime text 3 editor. 
 		4.6.1 Add the following code and the end of the dictionary: 
-		
+		```
 		,
                     {"command": "repl_open",
                      "caption": "Python MyEnv",
@@ -105,7 +113,7 @@ By Romy Bompart
                         "extend_env": {"PYTHONIOENCODING": "utf-8"}
                         }
                     }
-		    
+		 ```
         4.6.2 Save it, and we are almost done. 
 
     4.7 Configure the build system. Actually, it is select the generated Anaconda Python Builder. 
@@ -120,18 +128,24 @@ By Romy Bompart
 	5.1 Lets go to file > new File. 
 	5.2 Let's go to the bottom right corner of the sublime text 3 screen and where "Plain Text" is, please click on the text and a drop list will appear, then select python.
 	5.3 automatically, the file unamed will understand your python syntaxys. Now, let's make some example code:
+	```python
 		import numpy
 		print ( "hello words !!! ")
 		print (numpy.__version__)
+	```
 
 	5.4 During the process of the code I hope you noticed how sublime text 3 is autocompleting your code by using the TAB after you write some words. 
 	5.5 Now let's press Ctrl + B, to build the code or go to Tools > Build ... 
 	5.6 The console will appear with the result of the code: 
-	
+	```	
 	Hellow World !!!
 	3.4.3
 	[Finished in 1.0s]
- 
+ 	```
  	5.7 Now, what if we want to run some code alive as Jupyter Notebook or sort of. 
  		Let's open SublimeREPL, go to Tools > SublimeREPL > python > Python MyEnv 
  		Notice, the name is the same as we created in step 4.6.1. Click on that and a new page/tab will appear. 
+		
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
