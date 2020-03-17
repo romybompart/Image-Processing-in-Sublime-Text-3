@@ -33,7 +33,8 @@ By Romy Bompart
        Let's open Sublime Text 3, go to Project > Save project As , then put a name and save the file in a new folder. 
        For example I created myproject folder, and the project name is my_env_project. 
        In the folder you shall have two files: .sublime-project and .sublime-workspace extension files. 
-   	4.2 We are going to go to Project > Edit Project and configure the virtualenv path of the python interpreter
+   	4.2 We are going to go to Project > Edit Project and configure the virtualenv path of the python interpreter:
+	
 		   {
 			"build_systems":
 			[
@@ -70,7 +71,8 @@ By Romy Bompart
 	    4.5.1 Look for the line: "command": "sublime_jedi_params_autocomplete", "keys": ["("]
 	    and change it by "command": "sublime_jedi_params_autocomplete", "keys": ["ctrl+("],
 	    it is because you won't be able to use the open parenthesis (, I am not sure why it is originally in that way. 
-	    4.5.2 In the package settings > Jedi > Settings User
+	    4.5.2 In the package settings > Jedi > Settings User:
+	    
 	    	{
 				"settings":
 				{
