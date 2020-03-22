@@ -148,4 +148,4 @@ By Romy Bompart
 		
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+Creative Commons Attribution 4.0 International
