@@ -407,6 +407,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Test_sublime_text_3_Virtualenv_Tensorflow.py",
+			"settings":
+			{
+				"buffer_size": 127,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -467,6 +475,26 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"git: push b",
+				"Git: Push Current Branch"
+			],
+			[
+				"git",
+				"Git: Add Remote"
+			],
+			[
+				"GIT: remote",
+				"Git: Remote"
+			],
+			[
+				"git remo",
+				"Git: Remote"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
 			[
 				"git: push",
 				"Git: Push Current Branch"
@@ -579,6 +607,7 @@
 		"height": 262.0,
 		"history":
 		[
+			"commit",
 			"os.__version__",
 			"import os",
 			"python",
@@ -640,10 +669,14 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Romy1/Documents/Documentos Romy/Books/UANL MASTER/Segundo Tetra/Procesamiento de Imagenes/Image-Processing-in-Sublime-Text-3"
 	],
 	"file_history":
 	[
+		"/C/Users/Romy1/Documents/Documentos Romy/Books/UANL MASTER/Segundo Tetra/Procesamiento de Imagenes/Image-Processing-in-Sublime-Text-3/Readme.md",
+		"/C/Users/Romy1/Documents/Documentos Romy/Books/UANL MASTER/Segundo Tetra/Procesamiento de Imagenes/Image-Processing-in-Sublime-Text-3/.git/index",
+		"/C/Users/Romy1/Documents/Documentos Romy/Books/UANL MASTER/Segundo Tetra/Procesamiento de Imagenes/Image-Processing-in-Sublime-Text-3/.git/config",
+		"/C/Users/Romy1/Documents/Documentos Romy/Books/UANL MASTER/Segundo Tetra/Procesamiento de Imagenes/Image-Processing-in-Sublime-Text-3/Activity_6_0_low_pass_filters.py",
+		"/C/Users/Romy1/Documents/Documentos Romy/Books/UANL MASTER/Segundo Tetra/Procesamiento de Imagenes/Image-Processing-in-Sublime-Text-3/Activity_3_1_histogram.py",
 		"/C/Users/Romy1/Documents/Documentos Romy/Books/UANL MASTER/Segundo Tetra/Procesamiento de Imagenes/Image-Processing-in-Sublime-Text-3/Activity_10_0_Rotation.py",
 		"/C/Users/Romy1/Documents/Documentos Romy/Books/UANL MASTER/Segundo Tetra/Procesamiento de Imagenes/Image-Processing-in-Sublime-Text-3/Activity_11_1_Rotation_Dectection.py",
 		"/C/Users/Romy1/Documents/Documentos Romy/Books/UANL MASTER/Segundo Tetra/Procesamiento de Imagenes/Image-Processing-in-Sublime-Text-3/Activity_11_0_Rotation_Dectection.py",
@@ -766,12 +799,7 @@
 		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/RaspberryPi/Codigo raspberry.py",
 		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/RaspberryPi/Model_Autopilot/model_cnn_nvidia2.py",
 		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/RaspberryPi/Model_Autopilot/model_cnn_nvidia2_test.py",
-		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/Self_Driving_Car_Course/Source/Neural Networks/gradient_decent.py",
-		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/Self_Driving_Car_Course/Source/keras/keras_prediction.py",
-		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/Self_Driving_Car_Course/Source/test_import.py",
-		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/Self_Driving_Car_Course/Source/keras/keras_intro.py",
-		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/Self_Driving_Car_Course/Source/Neural Networks/data_set_creation.py",
-		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/Self_Driving_Car_Course/Source/Neural Networks/cross_entropy.py"
+		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/Self_Driving_Car_Course/Source/Neural Networks/gradient_decent.py"
 	],
 	"find":
 	{
@@ -809,8 +837,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Test_sublime_text_3_Virtualenv_Tensorflow.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -919,7 +976,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 318.0,
+	"side_bar_width": 367.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
