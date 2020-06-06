@@ -408,10 +408,19 @@
 	"buffers":
 	[
 		{
-			"file": "Test_sublime_text_3_Virtualenv_Tensorflow.py",
+			"file": "activity_12_gray_scale.py",
 			"settings":
 			{
-				"buffer_size": 127,
+				"buffer_size": 567,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Activity_10_0_Rotation.py",
+			"settings":
+			{
+				"buffer_size": 5698,
 				"line_ending": "Windows"
 			}
 		}
@@ -669,9 +678,11 @@
 	},
 	"expanded_folders":
 	[
+		"/C/Users/Romy1/Documents/Documentos Romy/Books/UANL MASTER/Segundo Tetra/Procesamiento de Imagenes/Image-Processing-in-Sublime-Text-3"
 	],
 	"file_history":
 	[
+		"/C/Users/Romy1/Documents/Documentos Romy/Books/UANL MASTER/Segundo Tetra/Procesamiento de Imagenes/Image-Processing-in-Sublime-Text-3/activity_12_gray_scale.py",
 		"/C/Users/Romy1/Documents/Documentos Romy/Books/UANL MASTER/Segundo Tetra/Procesamiento de Imagenes/Image-Processing-in-Sublime-Text-3/Readme.md",
 		"/C/Users/Romy1/Documents/Documentos Romy/Books/UANL MASTER/Segundo Tetra/Procesamiento de Imagenes/Image-Processing-in-Sublime-Text-3/.git/index",
 		"/C/Users/Romy1/Documents/Documentos Romy/Books/UANL MASTER/Segundo Tetra/Procesamiento de Imagenes/Image-Processing-in-Sublime-Text-3/.git/config",
@@ -798,12 +809,11 @@
 		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/RaspberryPi/C_python_raspberry_cam.py",
 		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/RaspberryPi/Codigo raspberry.py",
 		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/RaspberryPi/Model_Autopilot/model_cnn_nvidia2.py",
-		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/RaspberryPi/Model_Autopilot/model_cnn_nvidia2_test.py",
-		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/Self_Driving_Car_Course/Source/Neural Networks/gradient_decent.py"
+		"/C/Users/Romy1/Documents/Documentos Romy/Proyectos Personales/RaspberryPi/Model_Autopilot/model_cnn_nvidia2_test.py"
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -842,24 +852,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Test_sublime_text_3_Virtualenv_Tensorflow.py",
-					"semi_transient": true,
+					"file": "activity_12_gray_scale.py",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 127,
+						"buffer_size": 567,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								74,
+								74
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -867,13 +878,43 @@
 					},
 					"stack_index": 0,
 					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Activity_10_0_Rotation.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5698,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5696,
+								5685
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3240.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -934,7 +975,7 @@
 	"project": "pdi_project.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -952,12 +993,16 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"C:\\Users\\Romy1\\Documents\\Documentos Romy\\Books\\UANL MASTER\\Segundo Tetra\\Procesamiento de Imagenes\\a\\pdi_project.sublime-workspace"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
@@ -976,7 +1021,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 367.0,
+	"side_bar_width": 338.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

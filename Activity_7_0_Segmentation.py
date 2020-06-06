@@ -112,7 +112,11 @@ def segmentation (image, kernel_s = 3):
     
     kernel_A = kernel_creator(kernel_s, f_type = 6)
     kernel_B = kernel_creator(kernel_s, f_type = 7)
-    
+    print ( "...the kernel that you are using...")
+    print ( kernel_A )
+    print ( "...the kernel that you are using...")
+    print ( kernel_B )
+
     padimage = np.pad(image,kernel_s, pad_with)
     row, col = np.shape(padimage)
     segmented_image = np.empty([row-kernel_s-1, col-kernel_s-1])

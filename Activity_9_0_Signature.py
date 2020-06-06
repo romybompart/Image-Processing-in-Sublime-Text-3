@@ -231,10 +231,11 @@ def signature(image,centroide_x, centroide_y ):
     return r
 
 #filename = os.path.join('apple_Red3.jpg')
-filename = os.path.join('images/apple_Red2.jpg')
+#filename = os.path.join('images/apple_Red2.jpg')
 #filename = os.path.join('banana.jpg')
 #filename = os.path.join('persona.jfif')
 #filename = os.path.join('mexico_map_2.gif')
+filename = os.path.join('images/square_paint.png')
 image_c = io.imread(filename)
 #image_c = image = data.rocket()
 image = rgb2gray(image_c)

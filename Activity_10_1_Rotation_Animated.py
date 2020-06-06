@@ -1,13 +1,15 @@
 import skimage
 from skimage.color import rgb2gray
-from skimage import data
+from skimage import data, io
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import matplotlib
 matplotlib.rcParams['font.size'] = 18
 import numpy as np
+import os
 
-imageRGB = data.coffee()
+filename = os.path.join('images/arrow.png')
+imageRGB = io.imread(filename)
 image = rgb2gray(imageRGB)
 row, col = np.shape(image)
 

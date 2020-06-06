@@ -135,7 +135,9 @@ plt.imshow(image)
 
 filter_type = 5
 
-filtered = filter_application(image,kernel_size=10,kernel_value=6,filter_type=filter_type)
+# image_ruido = random_noise(image,mode="s&p", amount = 0.3)
+
+filtered = filter_application(image,kernel_size=3,kernel_value=6,filter_type=filter_type)
 
 
 plt.figure()
@@ -143,6 +145,6 @@ plt.subplot(1,2,1)
 plt.title("Original")
 plt.imshow(image, cmap='gray')
 plt.subplot(1,2,2)
-plt.title(("High pass filter =" + str(filter_type)))
+plt.title(("filter =" + str(filter_type)))
 plt.imshow(filtered, cmap='gray')
 plt.show()

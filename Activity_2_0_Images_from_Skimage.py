@@ -23,3 +23,5 @@ for name in images:
     plt.title(name)
     plt.imshow(image, cmap="gray")
     plt.show()
+
+data.

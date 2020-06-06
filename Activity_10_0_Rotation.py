@@ -98,7 +98,7 @@ def filter_application(image,kernel_size=3, kernel_value=1, filter_type=0):
     return filtered_image
 
 
-filename = os.path.join('images/square_paint.png')
+filename = os.path.join('images/arrow.png')
 imageRGB = io.imread(filename)
 #plt.figure()
 #plt.imshow(image)

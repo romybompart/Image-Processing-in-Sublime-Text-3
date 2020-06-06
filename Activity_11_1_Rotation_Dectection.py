@@ -107,7 +107,7 @@ imageRGB = io.imread(filename)
 image = rgb2gray(imageRGB)
 row, col = np.shape(image)
 
-alpha = 90
+alpha = 15
 alpha_rad = np.pi * alpha / 180
 
 cx = col/2

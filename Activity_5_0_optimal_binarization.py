@@ -26,7 +26,7 @@ def binarization(image, middle):
     binarized = np.empty([a, b])
     for k in range(a):
         for i in range (b):
-            if (image[k,i]*255>=middle):
+            if (image[k,i]>=middle):
                 binarized[k,i] = 255
             else:
                 binarized[k,i]= 0
@@ -34,13 +34,12 @@ def binarization(image, middle):
     return binarized
 
 def histogram(image):
-    maxi = image.max()
-    bins = np.zeros([255])
+    bins = np.zeros([256])
     a, b = np.shape(image)
     
     for k in range(a):
         for i in range (b):
-            bins[int(image[k,i]*255)] =  1 + bins[int(image[k,i]*255)]
+            bins[int(image[k,i])] =  1 + bins[int(image[k,i])]
             
     return bins
 
@@ -101,7 +100,7 @@ def optimal_binarization(image):
     vm = varianzas(his, image)
     # print( vm )
     pos_vm = whereMax(vm)
-    # print(pos_vm)
+    print(pos_vm)
     binimage = binarization( image,pos_vm)
     # print( image )
     return binimage
@@ -110,7 +109,7 @@ image = rgb2gray(data.rocket())
 plt.figure()
 plt.imshow(image)
 
-# print( bin_image )
+bin_image  = optimal_binarization(image*255)
 
 plt.figure()
 plt.subplot(1,2,1)

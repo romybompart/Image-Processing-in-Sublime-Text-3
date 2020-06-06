@@ -40,14 +40,14 @@ def histogram(image):
     
     for k in range(a):
         for i in range (b):
-            bins[int(image[k,i]*255)] =  1 + bins[int(image[k,i]*255)]
+            bins[int(image[k,i])] =  1 + bins[int(image[k,i])]
             
     return bins
 
 def quadratic(image, **coefficient):
     if (len(coefficient)<=4):
         a, b = np.shape(image)
-        transformed = np.empty([a, b])
+        transformed = np.zeros([a, b])
         coff = np.zeros(4)
         j=0
         
@@ -75,21 +75,21 @@ plt.figure()
 plt.imshow(invertedimage, cmap="gray")
 plt.show()
 
-value =0.5
-binimage = binarization( rgb2gray(image),value)
+value = 120
+binimage = binarization( rgb2gray(image) * 255 ,value)
 
 plt.figure()
 plt.imshow(binimage, cmap="gray")
 plt.show()
 
-his = histogram(rgb2gray(image))
+his = histogram(rgb2gray(image)*255)
 plt.bar(np.arange(len(his)),his,align='center',alpha=1)
 plt.show()
 
-transf = quadratic(rgb2gray(image), a=1/64,b=0,c=0,e=0.2)
+transf = quadratic(rgb2gray(image)*255, a=1,b=0,c=0,e=2)
 plt.figure()
 plt.subplot(1,2,1)
 plt.imshow(transf, cmap='gray')
 plt.subplot(1,2,2)
-plt.imshow(image, cmap='gray')
+plt.imshow(rgb2gray(image), cmap='gray')
 plt.show()
