@@ -6,11 +6,9 @@ from skimage.color import rgb2gray
 
 #
 def main():
-	path = 'C:/Users/Romy1/Documents/Documentos Romy/Books/' \
-	'UANL MASTER/Segundo Tetra/Analisis de Sistemas de Potencia/' \
-	'TAREA/TAREA 3/Document/images/'
+	path = '../images/'
 
-	image_name = 'javierbaca.JPG'
+	image_name = 'romybompart.JPG'
 
 	filename = os.path.join(path,image_name)
 	
